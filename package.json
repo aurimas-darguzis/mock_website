@@ -1,0 +1,23 @@
+{
+  "name": "mock_website",
+  "version": "1.0.0",
+  "description": "Playground",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurimas-darguzis/mock_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurimas-darguzis/mock_website/issues"
+  },
+  "homepage": "https://github.com/aurimas-darguzis/mock_website#readme",
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
+}
