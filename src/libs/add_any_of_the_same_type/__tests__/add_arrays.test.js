@@ -16,7 +16,44 @@ describe('Add test', () => {
       const expected = [];
       const actual = add.addArrays([], {});
       expect(actual).toEqual(expected);
-    })
+    });
 
+    it('returns [] for an object to the array', () => {
+      const expected = [];
+      const actual = add.addArrays([], {});
+      expect(actual).toEqual(expected);
+    });
+
+    it('returns [] for a number to the array', () => {
+      const expected = [];
+      const actual = add.addArrays([], 0);
+      expect(actual).toEqual(expected);
+    });
+
+    it('returns [] for undefined input', () => {
+      const expected = [];
+      const actual = add.addArrays();
+      expect(actual).toEqual(expected);
+    });
+
+    it('returns [] if the left param is undefined', () => {
+      const expected = [];
+      const actual = add.addArrays(undefined, []);
+      expect(actual).toEqual(expected);
+    });
+
+    it('returns [] if the right param is undefined', () => {
+      const expected = [];
+      const actual = add.addArrays([], undefined);
+      expect(actual).toEqual(expected);
+    });
   });
+
+  describe('isFailedArrayAdd', () => {
+    it('returns true for empty array', () => {
+      const expected = true;
+      const actual = add.isFailedArrayAdd([]);
+      expect(actual).toEqual(expected);
+    });
+  })
 });
