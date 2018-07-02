@@ -5,9 +5,8 @@ const addBooleans = (a, b) => {
 
 module.exports.addBooleans = addBooleans;
 
-const isFailedBooleanAdd = (value) => {
-    if (value !== -1) return false;
-    return true;
+const isFailedBooleanAdd = value => {
+    return value === -1;
 }
 
 module.exports.isFailedBooleanAdd = isFailedBooleanAdd;
