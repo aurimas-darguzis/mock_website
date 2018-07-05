@@ -37,3 +37,17 @@ describe('add', () => {
         expect(actual).toEqual(expected);
     });
 });
+
+describe('isFailedNumberAdd', () => {
+    it('returns true if empty object', () => {
+        const expeceted = true;
+        const actual = add.ifFailedObjectAdd({});
+        expect(actual).toEqual(expeceted);
+    });
+
+    it('returns false if passing no value', () => {
+        const expeceted = false;
+        const actual = add.ifFailedObjectAdd();
+        expect(actual).toEqual(expeceted);
+    });
+});

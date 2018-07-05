@@ -19,5 +19,8 @@
   "homepage": "https://github.com/aurimas-darguzis/mock_website#readme",
   "devDependencies": {
     "jest": "^23.2.0"
+  },
+  "dependencies": {
+    "lodash.isobject": "^3.0.2"
   }
 }
