@@ -5,3 +5,35 @@ describe('Add Objects test', () => {
         expect(add).toBeDefined();
     });
 });
+
+describe('add', () => {
+    it('adds two Objects', () => {
+        const expected = { foo: 1, bar: 1 };
+        const actual = add.addObjects({ foo: 1 }, { bar: 1 });
+        expect(actual).toEqual(expected);
+    });
+
+    it('returns {} when passing object and boolean', () => {
+        const expected = {};
+        const actual = add.addObjects({}, true);
+        expect(actual).toEqual(expected);
+    });
+
+    it('returns {} when passing object and array', () => {
+        const expected = {};
+        const actual = add.addObjects({}, []);
+        expect(actual).toEqual(expected);
+    });
+
+    it('returns {} when passing an object and the number', () => {
+        const expected = {};
+        const actual = add.addObjects({}, 1);
+        expect(actual).toEqual(expected);
+    });
+
+    it('returns {} when passing null and undefined', () => {
+        const expected = {};
+        const actual = add.addObjects(null, undefined);
+        expect(actual).toEqual(expected);
+    });
+});
