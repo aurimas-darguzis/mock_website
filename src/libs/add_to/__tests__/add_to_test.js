@@ -50,7 +50,7 @@ describe('addTo', () => {
     });
 
     it('adds a boolean to a number', () => {
-        const expected = '1';
+        const expected = 1;
         const actual = add.addTo(false, 1);
         expect(actual).toEqual(expected);
     });
