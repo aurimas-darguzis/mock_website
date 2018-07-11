@@ -28,14 +28,17 @@ const stitch = (left, right) => {
         }
     }
 
-    while (left.length) {
-        results.push(left.shift());
-    }
-    while (right.length) {
-        results.push(right.shift());
-    }
+    // while (left.length) {
+    //     results.push(left.shift());
+    // }
+    // while (right.length) {
+    //     results.push(right.shift());
+    // }
 
-    return results;
+    // return results;
+
+    // u can omit the last two while loops with the return statement into this:
+    return [...results, ...left, ...right];
 }
 
 module.exports.mergeSort = mergeSort;
